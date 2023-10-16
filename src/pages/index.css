@@ -1,0 +1,98 @@
+/* nav content styling starts */
+.banner_container{
+  max-width: 1365px;
+  /* width: 90%; */
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.363);
+  .banner_section{
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.pricing{
+      background: linear-gradient(138.81deg, #6134C1 23.33%, rgba(44, 11, 116, 0.66) 100%);
+      /* max-width: 508px; */
+      min-width: calc(37% - 50px);
+      padding-right: 0;
+    }
+    &.features{
+      background-color: white;
+      min-width: calc(31% - 100px);
+      /* max-width: 400px; */
+    }
+    &.price{
+      background: rgba(204, 204, 204, 0.25);
+      /* max-width: 363px; */
+      min-width: calc(30% - 100px);
+      .subHeading{
+        font-size: 16px;
+        color:rgba(0, 0, 0, 0.5);
+      }
+      .price_value{
+        color: rgba(97, 52, 193, 1);
+        font-size: 65px;
+      }
+    }
+  }
+  .heading{
+    color: rgba(97, 52, 193, 1);
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+  }
+  .button{
+    display: flex;
+    font-size: 18px;
+    color: rgba(97, 52, 193, 1);
+    font-weight: bold;
+    width: max-content;
+    &.unfilled{
+      margin-left: 20px;
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+    &.icon_filled{
+      background: rgba(128, 188, 64, 1);
+      border-radius: 5px;
+      width: 230px;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+      .text{
+        margin-right: 10px;
+        color: rgb(255, 255, 255);
+      }
+      .icon{
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+}
+@media (max-width: 909px) {
+  .banner_container{
+    border-radius: 0;
+    flex-direction: column;
+    box-shadow: none;
+    width: 100%;
+    padding: 0;
+    .banner_section{
+      width: auto;
+      &.pricing{
+        padding: 20px;
+      }
+      &.features{
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        border-left: 1px solid rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+}
+/* nav content styling ends */
+
+
